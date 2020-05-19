@@ -128,13 +128,13 @@ Pagy::VARS[:items] = Rails.configuration.pagination_rows # default
 # load the "de", "en" and "es" built-in locales:
 # (the first passed :locale will be used also as the default_locale)
 # Pagy::I18n.load({locale: 'de'},
-#                 {locale: 'en'},
+#                 {locale: 'fa'},
 #                 {locale: 'es'})
 #
 # load the "en" built-in locale, a custom "es" locale,
 # and a totally custom locale complete with a custom :pluralize proc:
 # (the first passed :locale will be used also as the default_locale)
-# Pagy::I18n.load({locale: 'en'},
+# Pagy::I18n.load({locale: 'fa'},
 #                 {locale: 'es', filepath: 'path/to/pagy-es.yml'},
 #                 {locale: 'xyz',  # not built-in
 #                  filepath: 'path/to/pagy-xyz.yml',
