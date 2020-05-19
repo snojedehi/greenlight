@@ -109,7 +109,7 @@ class ApplicationController < ActionController::Base
     rescue
       # Default to English if there are any issues in language
       logger.error("Support: User locale is not supported (#{locale}")
-      I18n.locale = "fa"
+      I18n.locale = "en"
     end
   end
 
