@@ -28,12 +28,12 @@
       </script>
     <% end %>
 
-    <title>sazejoo</title>
+    <title><%= t("bigbluebutton") %></title>
     <meta property="og:title" content="<%= t("bigbluebutton", locale: :en) %>" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="<%= t("landing.about", href: "Greenlight", locale: :en) %>" />
     <meta property="og:url" content="<%= request.base_url %>" />
-    <meta property="og:image" content="https://sazejoo.com/wp-content/uploads/2019/02/android-direct-300x84.png" />
+    <meta property="og:image" content="<%= logo_image %>" />
 
     <meta name="viewport" content= "width=device-width, user-scalable=no">
     <%= csrf_meta_tags %>
@@ -59,7 +59,7 @@
   </head>
 
   <body class="app-background" data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>" data-relative-root="<%= Rails.configuration.relative_url_root || "/" %>">
-
+    <%= render "shared/header" %>
 
     <div class="wrapper">
       <% if bigbluebutton_endpoint_default? %>
