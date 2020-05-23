@@ -2,7 +2,7 @@
 
 # Load available languages.
 
-configured_languages = []
+configured_languages = [:fa_IR]
 
 locales = Dir.glob("#{Rails.root}/config/locales/*")
 locales.each do |loc|
